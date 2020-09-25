@@ -108,7 +108,8 @@ test -> deploy
 ////
 
 ====
-Termin der Leistungsfeststellung 23.11.2020
+* Termin der Leistungsfeststellung 23.11.2020
+* Termin der Prüfungen 22.1.2021
 ====
 
 == 2020-09-25
