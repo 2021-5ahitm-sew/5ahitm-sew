@@ -1,0 +1,118 @@
+= Lecture Notes 5AHITM SEW 20/21
+Thomas Stütz
+1.0.0, yyyy-mm-dd: Some notes
+ifndef::imagesdir[:imagesdir: images]
+//:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
+:sourcedir: ../src/main/java
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+:toc: left
+
+//Need this blank line after ifdef, don't know why...
+ifdef::backend-html5[]
+
+// https://fontawesome.com/v4.7.0/icons/
+// icon:file-text-o[link=https://raw.githubusercontent.com/htl-leonding-college/asciidoctor-docker-template/master/asciidocs/{docname}.adoc] ‏ ‏ ‎
+// icon:github-square[link=https://github.com/htl-leonding-college/asciidoctor-docker-template] ‏ ‏ ‎
+// icon:home[link=https://htl-leonding.github.io/]
+endif::backend-html5[]
+
+// print the toc here (not at the default position)
+//toc::[]
+
+
+////
+== 2020-09-24
+
+=== Referate
+
+.Termin
+|===
+|Wer |Was |Bis wann?
+
+|Stütz
+|Liste der Referatsthemen
+|1. Okt. 2020
+
+|Stütz
+|Referatstermine festlegen
+|1. Okt. 2020
+
+|Stütz
+|RevealJs Repo zur Verfügung stellen
+|1. Okt. 2020
+
+|===
+
+==== Sources
+
+* https://github.com/bentolor/java9to13[Asciidoctor & RevealJS - Source, window="_blank"]
+* https://bentolor.github.io/java9to13[Asciidoctor & RevealJS - Presentation, window="_blank"]
+* https://www.pexels.com/[Pexels, window="_blank"]
+* https://undraw.co[UnDraw, window="_blank"]
+* https://unsplash.com/[unsplash, window="_blank"]
+* https://plantuml.com/class-diagram[plantUml]
+
+
+
+
+=== Verwendung von plantuml in Asciidoctor
+
+[plantuml,xxx,png]
+----
+@startuml
+class Person {
+  name: String
+  hobbies: List<Hobby>
+}
+
+class Hobby {
+  person: Person
+}
+Person <--- Hobby : übt aus >
+Person ---> Hobby
+@enduml
+----
+
+[source,java]
+----
+Hobby hobby = new Hobby();
+hobby.person = new Person();
+
+Person person = hobby.person;
+----
+
+
+[plantuml,jenkins,png]
+----
+@startuml
+rectangle gitrepo
+queue jenkins{
+    file java
+    storage compile
+    file class
+    storage package
+    file jar
+    storage test
+    storage deploy
+}
+gitrepo -> java
+java -> compile
+compile -> class
+class -> package
+package -> jar
+jar -> test
+test -> deploy
+@enduml
+----
+////
+
+== 2020-09-25
+
+=== Übung WebSocket, SSE und gRPC
+
+Erstellen Sie gemäß Ihrem Thema ein Projekt und implementierne Sie obige Technologien
+
+* https://quarkus.io/guides/websockets[WebSockets, window="_blank"]
+* SSE
+* https://quarkus.io/guides/grpc-getting-started[gRPC, window="_blank"]
