@@ -1,6 +1,6 @@
 = Lecture Notes 5AHITM SEW 20/21
-Thomas Stütz
-1.0.0, yyyy-mm-dd: Some notes
+Thomas W. Stütz
+1.0.0, 2020-09-25: Lecture Notes
 ifndef::imagesdir[:imagesdir: images]
 //:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
 :sourcedir: ../src/main/java
@@ -119,4 +119,7 @@ Erstellen Sie gemäß Ihrem Thema ein Projekt und implementieren Sie untenstehen
 
 .Weitere Aufgaben:
 * Dokumentieren Sie die einzelnen Technologien in Form von gh-pages mit Asciidoctor
+** Einsatzgebiet von gRPC (Welches Problem wird gelöst)
+** Alternativen zu gRPC
+** Grundlegende Funktionsweise von gRPC
 * Pushen Sie das Endergebnis sowie die Zwischenergebnisse hierhin: https://classroom.github.com/a/WHJoF_6T
