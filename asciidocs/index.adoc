@@ -13,7 +13,7 @@ ifdef::backend-html5[]
 
 // https://fontawesome.com/v4.7.0/icons/
 // icon:file-text-o[link=https://raw.githubusercontent.com/htl-leonding-college/asciidoctor-docker-template/master/asciidocs/{docname}.adoc] ‏ ‏ ‎
-// icon:github-square[link=https://github.com/htl-leonding-college/asciidoctor-docker-template] ‏ ‏ ‎
+icon:github-square[link=https://github.com/2021-5ahitm-sew/5ahitm-sew]
 // icon:home[link=https://htl-leonding.github.io/]
 endif::backend-html5[]
 
