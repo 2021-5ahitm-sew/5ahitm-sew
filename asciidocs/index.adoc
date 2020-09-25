@@ -111,8 +111,12 @@ test -> deploy
 
 === Übung WebSocket, SSE und gRPC
 
-Erstellen Sie gemäß Ihrem Thema ein Projekt und implementierne Sie obige Technologien
+Erstellen Sie gemäß Ihrem Thema ein Projekt und implementieren Sie untenstehende Technologien:
 
 * https://quarkus.io/guides/websockets[WebSockets, window="_blank"]
 * SSE
 * https://quarkus.io/guides/grpc-getting-started[gRPC, window="_blank"]
+
+.Weitere Aufgaben:
+* Dokumentieren Sie die einzelnen Technologien in Form von gh-pages mit Asciidoctor
+* Pushen Sie das Endergebnis sowie die Zwischenergebnisse hierhin: https://classroom.github.com/a/WHJoF_6T
