@@ -107,6 +107,10 @@ test -> deploy
 ----
 ////
 
+====
+Termin der Leistungsfeststellung 23.11.2020
+====
+
 == 2020-09-25
 
 === Übung WebSocket, SSE und gRPC
