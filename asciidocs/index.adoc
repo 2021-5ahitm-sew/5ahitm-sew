@@ -13,7 +13,7 @@ ifdef::backend-html5[]
 
 // https://fontawesome.com/v4.7.0/icons/
 // icon:file-text-o[link=https://raw.githubusercontent.com/htl-leonding-college/asciidoctor-docker-template/master/asciidocs/{docname}.adoc] ‏ ‏ ‎
-icon:github-square[link=https://github.com/2021-5ahitm-sew/5ahitm-sew]
+icon:github-square[link=https://github.com/2021-5ahitm-sew/5ahitm-sew, window="_blank"]
 // icon:home[link=https://htl-leonding.github.io/]
 endif::backend-html5[]
 
@@ -123,8 +123,10 @@ Erstellen Sie gemäß Ihrem Thema ein Projekt und implementieren Sie untenstehen
 * https://quarkus.io/guides/grpc-getting-started[gRPC, window="_blank"]
 
 .Weitere Aufgaben:
+* Testen Sie die einzelnen Technologien automatisiert
 * Dokumentieren Sie die einzelnen Technologien in Form von gh-pages mit Asciidoctor
 ** Einsatzgebiet von gRPC (Welches Problem wird gelöst)
 ** Alternativen zu gRPC
 ** Grundlegende Funktionsweise von gRPC
+** Dokumentieren Sie die automatisierten Tests
 * Pushen Sie das Endergebnis sowie die Zwischenergebnisse hierhin: https://classroom.github.com/a/WHJoF_6T
