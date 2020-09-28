@@ -108,7 +108,7 @@ test -> deploy
 ////
 
 ====
-* Termin der Leistungsfeststellung 27.11.2020
+* Termin der Leistungsfeststellung 23.11.2020
 * Termin der Prüfungen 22.1.2021
 ====
 
@@ -123,7 +123,7 @@ Erstellen Sie gemäß Ihrem Thema ein Projekt und implementieren Sie untenstehen
 * https://quarkus.io/guides/grpc-getting-started[gRPC, window="_blank"]
 
 .Weitere Aufgaben:
-* Testen Sie die einzelnen Technologien automatisiert
+Testen Sie die einzelnen Technologien automatisiert
 * Dokumentieren Sie die einzelnen Technologien in Form von gh-pages mit Asciidoctor
 ** Einsatzgebiet von gRPC (Welches Problem wird gelöst)
 ** Alternativen zu gRPC
