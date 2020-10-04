@@ -130,3 +130,21 @@ Testen Sie die einzelnen Technologien automatisiert
 ** Grundlegende Funktionsweise von gRPC
 ** Dokumentieren Sie die automatisierten Tests
 * Pushen Sie das Endergebnis sowie die Zwischenergebnisse hierhin: https://classroom.github.com/a/WHJoF_6T
+
+== 2020-10-02
+
+* Was ist gRPC
+** Alternative zu REST
+** binär
+** sehr effizient und performant
+** ...
+
+* Feedback zu Übungen
+
+* Ansehen der Definition von gRPC lt. https://www.youtube.com/watch?v=nt9haFAQUL8[Rainer Stropek - gRPC mit C#]
+
+
+
+
+
+
