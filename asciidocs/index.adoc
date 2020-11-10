@@ -144,7 +144,119 @@ Erstellen Sie gemäß Ihrem Thema ein Projekt und implementieren Sie untenstehen
 * Ansehen der Definition von gRPC lt. https://www.youtube.com/watch?v=nt9haFAQUL8[Rainer Stropek - gRPC mit C#]
 
 
+== 2020-11-06
 
+* Asynchronous persistence with Mutiny
+
+== 2020-11-09
+
+=== Logging in Jakarta EE (Quarkus)
+
+https://quarkus.io/guides/logging
+
+* Es wird empfohlen den jboss-Logger zu verwenden.
+
+
+[source,java]
+----
+@ApplicationScoped
+public class GreetingService {
+
+    private static final Logger logger = Logger
+            .getLogger(GreetingService.class.getSimpleName()); // <.>
+
+    int counter;
+
+    public String greeting(String name) {
+        logger.info(String.format("Hello %s (%d x verwendet)", name, ++counter)); // <.>
+        return String.format("Hello %s (%d x verwendet)", name, ++counter);
+    }
+}
+----
+<.> Man muss einen Logger deklarieren. Der Klassenname wird übergeben.
+<.> Man kann den Logger verwenden
+
+.Output des Loggers in Console
+----
+2020-11-06 09:40:53,795 INFO  [at.htl.con.GreetingService] (executor-thread-198) Hello susi (1 x verwendet!)
+----
+
+* Es gibt *Log-Levels*
+** INFO
+** ERROR
+** FATAL
+** DEBUG
+** ...
+
+* Es gibt sogenannte *Appender* zur Ausgabe auf verschiedenen Medien
+** Konsole
+** in Text-Files (auch rotierend)
+*** zB 3 Files mit einer bestimmten Größe (zB 10k).
+*** Sind alle 3 Files beschrieben, wird das erste File gelöscht und neu beschrieben
+*** Vorteile:
+**** Der Speicher (Festplatte) wird nicht vollgeschrieben
+**** Es stehen immer Log-Meldungen aus der Vergangenheit zur Verfügung
+** in Datenbanken
+** auf einen REST-Endpoint
+** https://geekflare.com/open-source-centralized-logging/[Log-Collector] zB https://docs.graylog.org/en/3.3/pages/installation/docker.html#here[GrayLog]
+** ...
+
+==== Logging mit Dependency Injection
+
+Man kann auch einen Logger mit DI injizieren
+
+.Erstellen des Producers
+[source,java]
+----
+public class LoggerProducer {
+
+    @Produces
+    public Logger produceLogger(InjectionPoint injectionPoint) {
+        return Logger.getLogger(injectionPoint.getBean().getBeanClass());
+    }
+}
+----
+
+.Verwendung des injizierten Loggers
+[source,java]
+----
+@ApplicationScoped
+public class GreetingService {
+
+    @Inject
+    private Logger logger; // <.>
+
+    int counter;
+
+    public String greeting(String name) {
+        logger.info(String.format("Hello %s (%d x verwendet!)", name, ++counter)); // <.>
+        return String.format("Hello %s (%d x verwendet!)", name, ++counter);
+    }
+
+}
+----
+
+<.> Die Logger Klasse wird injiziert.
+<.> Die Verwendung bleibt gleich
+
+=== git blame
+https://htl-leonding-college.github.io/git-lecture-notes/#_blame_for_finding_the_author_of_a_line
+
+=== git tag
+https://htl-leonding-college.github.io/git-lecture-notes/#_tagging
+
+=== Semantic Versioning
+
+https://semver.org/lang/de/
+
+
+
+
+
+[source,java]
+----
+
+----
 
 
 

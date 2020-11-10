@@ -5,3 +5,5 @@ target/
 asciidocs/revealjs/
 revealjs.zip
 gh-pages
+workspace.xml
+*.zip
