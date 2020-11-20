@@ -249,6 +249,73 @@ https://htl-leonding-college.github.io/git-lecture-notes/#_tagging
 
 https://semver.org/lang/de/
 
+== 2020-11-13
+
+=== Quarkus mit Kotlin
+
+
+
+
+
+[source,java]
+----
+
+----
+
+
+
+
+
+[source,java]
+----
+
+----
+
+
+
+
+
+[source,java]
+----
+
+----
+
+
+
+
+
+[source,java]
+----
+
+----
+
+
+
+
+
+[source,java]
+----
+
+----
+
+
+
+
+
+[source,java]
+----
+
+----
+
+
+
+
+
+[source,java]
+----
+
+----
+
 
 
 
