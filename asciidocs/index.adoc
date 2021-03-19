@@ -7,6 +7,7 @@ ifndef::imagesdir[:imagesdir: images]
 :icons: font
 :sectnums:    // Nummerierung der Überschriften / section numbering
 :toc: left
+:toclevels: 6
 
 //Need this blank line after ifdef, don't know why...
 ifdef::backend-html5[]
@@ -252,6 +253,121 @@ https://semver.org/lang/de/
 == 2020-11-13
 
 === Quarkus mit Kotlin
+
+
+== 2020-11-20
+
+Project "JIB" java-image-builder
+
+
+== 2021-03-19
+
+====
+* Termin der Leistungsfeststellung 9.4.2021
+* Termin der Prüfungen 16.4.2021
+====
+
+=== Übung: Vorbereitung zur Matura
+
+==== Ausführung der Übung
+
+* Jeder Schüler erstellt mit dem Thema des Mikroprojekts, des vorigen Jahres ein kleines Projekt mit folgender aufgabenstellung
+
+* Die Anzahl der Tabellen des Datenmodells soll 4-5 Tabellen nicht überschreiten
+
+* Die Commits-Messages müssen mit dem Nachnamen beginnen
+
+[IMPORTANT]
+====
+* Die SchülerInnen können dazu befragt werden.
+* Falls diese Übung von allen SchülerInnen sauber durchgeführt wird
+und die SchülerInnen Ihre Lösung erklären / erläutern können
+kann dies den Test ersetzen
+* Dazu ist noch eine Vereinbarung mit den Lehrkräften notwendig.
+====
+
+Classroom: https://classroom.github.com/a/QD-A8-Vc
+
+* Erstellen Sie in diesem Repo sowohl für das Frontend als auch für
+das Backend einen eigenständigen Ordner (`frontend` und `backend`)
+
+* Termine
+** 26. März 2021: Abgabe des Backends (Datenmodelle + Repositories).
+*** An diesem Tag wird kontrolliert, ob die (bereits implementierten) Klassen ok sind.
+*** Das generierte Klassendiagramm und das ERD sind im README.md darzustellen.
+
+** 3. April 2021: Abgabe des restlichen Projekts
+*** dieses Projekt wird dann von den Lehrkräften durchgesehen
+*** Kriterien um den Test abzusagen:
+**** Alle SchülerInnen geben ein Projekt ab
+**** Die abgegebenen Projekte erfüllen ein Mindestmaß an Funktionalität (nicht leer)
+
+
+==== Allgemeines
+
+xxx
+
+==== Aufgabenstellung
+
+* Backend (Quarkus)
+* Frontend (Angular)
+
+//--
+
+===== Projekt erstellen
+===== DerbyDb als DB (Konfiguration vorgegeben)
+
+===== Klassen erstellen und persistieren
+
+* Datenmodell wird als ERD vorgegeben
+** -> Klassen erstellen
+** -> mit vorgegebenen INSERT.sql befüllen
+
+
+===== REST-Endpoints erstellen
+
+  Für die Endpoints sind NamedQueries in den Repositories zu erstellen.
+
+* vorgegeben ist zB
+** GET /api/vehicle/get-broken
+** POST
+** UPDATE
+** DELETE
+
+* Mit POSTs können auch
+** Images
+** Files (csv, json usw)
+hochgeladen werden -> Verwenden der Streaming API
+
+===== Implementierung des Clients
+
+====== Master-Detail-Seite
+
+* mit Routing und Parameterübergabe
+* Referesh-Button
+* Sortierung der Liste
+* Suchfunktion
+* Auf Detail Seite können Daten eingegeben werden
+
+====== WebSockets
+
+* Mit anderen Angular-Clients kann über WebSockets Kontakta aufgenommen und Daten ausgetauscht werden.
+
+
+====== SSE
+
+Information anderer Angular Clients über SSE
+
+
+
+
+
+
+
+
+
+
+
 
 
 
